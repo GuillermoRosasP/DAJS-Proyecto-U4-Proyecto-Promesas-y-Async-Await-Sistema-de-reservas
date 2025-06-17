@@ -1,0 +1,171 @@
+/* styles.css */
+
+/* Importar la fuente Poppins de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Fuente aplicada */
+  background: #f5f5f5;
+  padding: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontal */
+  justify-content: center; /* Centrar vertical */
+  min-height: 100vh;
+}
+
+/* Centrar header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #006837; /* Verde de Casa de Toño */
+  margin-bottom: 10px;
+}
+
+/* Formularios */
+.formulario {
+  background: #ffffff;
+  padding: 25px;
+  margin: 15px 0;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #006837;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #006837;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #006837;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #00994d; /* Verde más claro */
+  transform: scale(1.03);
+}
+
+#resultado {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+.panel {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.panel ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.panel li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  margin: auto;
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.cerrar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .formulario, .panel {
+    width: 100%;
+  }
+}
